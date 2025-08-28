@@ -1,0 +1,28 @@
+Plan de Pruebas
+======
+
+Opcion 1: (inside-out)
+- convertirFizzbuzz(n):
+    - numero que no es multiplo de 3 y 5. Ejm: 1 -> '1'
+    - numero multiplo de 3. Ejm 3 -> 'Fizz'
+    - numero multiplo de 5. Ejm 5 -> 'Buzz'
+    - numero multiplo de 3 y 5 . Ejm 15 -> 'FizzBuzz'
+-generarCadenaFizzbuzz(): - dado un numero introducido por el usuario generar toda la secuencia fizzbuzz hasta ese numero:
+    - generarCadenaFizzBuzz(0) => ""
+    - generarCadenaFizzBuzz(1) => "1"
+    - generarCadenaFizzBuzz(4) => "1 2 Fizz 4"
+
+======
+
+Opcion 2: (outside-in)
+-generarCadenaFizzbuzz(): dado un numero introducido por el usuario generar toda la secuencia fizzbuzz hasta ese numero:
+    - generarCadenaFizzBuzz(0) => ""
+    - generarCadenaFizzBuzz(1) => "1"
+    - generarCadenaFizzBuzz(3) => "1 2 Fizz"
+          - numero multiplo de 3. Ejm 3 -> 'Fizz'
+    -generarCadenaFizzbuzz(5) => "1 2 Fizz 4 Buzz"
+          - numero multiplo de 5. Ejm 3 -> 'Buzz'
+    - generarCadenaFizzBuzz(15) => "1 2 Fizz 4 ......"
+          - numero multiplo de 3 y 5. Ejm 15 -> 'FizzBuzz'
+
+
